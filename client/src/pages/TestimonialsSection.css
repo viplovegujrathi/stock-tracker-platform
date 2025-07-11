@@ -1,0 +1,93 @@
+/* Testimonials Section */
+.testimonial-section {
+  padding: 3rem 1rem;
+  background-color: #f5f7fa;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.testimonial-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #1976d2;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.testimonial-container {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 1rem;
+}
+
+.testimonial {
+  flex: 0 0 300px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  text-align: left;
+  scroll-snap-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial p {
+  font-size: 1.1rem;
+  color: #555;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.testimonial h4 {
+  font-size: 1.2rem;
+  color: #333;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+.testimonial img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  border: 2px solid #1976d2;
+}
+
+.testimonial .rating {
+  color: #ffcc00;
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+/* Add arrows for navigation */
+.testimonial-section .arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  color: #1976d2;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.testimonial-section .arrow.left {
+  left: 1rem;
+}
+
+.testimonial-section .arrow.right {
+  right: 1rem;
+}
+
+.testimonial-section .arrow:hover {
+  color: #145ca8;
+}
